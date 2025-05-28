@@ -1,138 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Email 11</title>
+  <title>Email Marketing - Campanha</title>
   <style>
     body {
       margin: 0;
       padding: 0;
+      background-color: #f3f3f3;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
       background-color: #ffffff;
-      font-family: 'Montserrat', sans-serif;
+    }
+    .header {
+      background-color: #1E1E1E;
+      padding: 20px;
       text-align: center;
     }
-
-    .container {
-      width: 100%;
-      max-width: 600px;
-      margin: 0 auto;
-      background-color: #ffffff;
+    .header img {
+      max-width: 200px;
     }
-
-    .product-table {
-      width: 100%;
-      border-spacing: 0;
+    .hero {
+      text-align: center;
+      padding: 20px;
     }
-
-    .product {
-      width: 50%;
-      padding: 10px;
+    .hero h1 {
+      color: #333333;
     }
-
-    .product img {
-      width: 100%;
-      display: block;
+    .hero p {
+      color: #555555;
     }
-
-    .product-title {
-      font-weight: 600;
-      font-family: 'Montserrat', sans-serif;
-      text-transform: uppercase;
-      font-size: 14px;
-      margin: 10px 0 5px;
-    }
-
     .button {
       display: inline-block;
-      background-color: #000000;
-      color: #ffffff;
-      text-decoration: none;
       padding: 10px 20px;
-      font-size: 14px;
-      text-transform: uppercase;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 600;
-      border: none;
-      border-radius: 0;
-      margin-bottom: 30px;
-    }
-
-    .footer-text {
-      text-transform: uppercase;
-      font-weight: 600;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 14px;
-      line-height: 1.4;
-      margin-top: 30px;
-      margin-bottom: 10px;
-    }
-
-    .view-all {
-      display: inline-block;
-      background-color: #000000;
-      color: #ffffff;
+      background-color: #F7C027;
+      color: #1E1E1E;
       text-decoration: none;
-      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+    .product {
+      padding: 20px;
+      border-top: 1px solid #ddd;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .product img {
+      max-width: 100%;
+      height: auto;
+    }
+    .product h2 {
+      color: #333;
+    }
+    .product p {
+      color: #777;
+    }
+    .footer {
+      background-color: #1E1E1E;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
       font-size: 14px;
-      text-transform: uppercase;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 600;
-      border-radius: 0;
-      margin-bottom: 30px;
     }
 
-    @media screen and (max-width: 600px) {
-      .product-table {
-        display: block;
-      }
-
+    @media (min-width: 600px) {
       .product {
-        display: block;
-        width: 100% !important;
-        box-sizing: border-box;
+        flex-direction: row;
+        text-align: left;
+      }
+      .product .info {
+        padding-left: 20px;
       }
     }
   </style>
 </head>
-
 <body>
   <div class="container">
-    <img src="https://i.imgur.com/X1pBuYm.png" width="600" style="display: block; width: 100%;" alt="">
 
-    <table class="product-table">
-      <tr>
-        <td class="product">
-          <img src="https://i.imgur.com/4rD17DH.png" alt="">
-          <div class="product-title">Vestido longo com<br>fenda frontal preto</div>
-          <a class="button" href="https://www.kimika.com.br/vestido-longo-com-fenda-frontal-preto">Garanta o seu</a>
-        </td>
-        <td class="product">
-          <img src="https://i.imgur.com/LVWsqW6.png" alt="">
-          <div class="product-title">Conjunto de saia midi<br>e blusa</div>
-          <a class="button" href="https://www.kimika.com.br/conjunto-de-saia-midi-e-blusa-gola-alta-moletinho">Garanta o seu</a>
-        </td>
-      </tr>
-      <tr>
-        <td class="product">
-          <img src="https://i.imgur.com/qyOX3bt.png" alt="">
-          <div class="product-title">Vestido midi manga<br>longa estampado</div>
-          <a class="button" href="https://www.kimika.com.br/vestido-midi-manga-longa-estampado">Garanta o seu</a>
-        </td>
-        <td class="product">
-          <img src="https://i.imgur.com/LncOgS2.png" alt="">
-          <div class="product-title">Vestido cruto de mangas<br>bulfantes</div>
-          <a class="button" href="https://www.kimika.com.br/vestido-cruto-de-mangas-bulfantes-com-amarracao-frontal-ferrugem">Garanta o seu</a>
-        </td>
-      </tr>
-    </table>
-
-    <div class="footer-text">
-      Não fique para trás,<br>também garanta nossos últimos lançamentos.
+    <!-- Header -->
+    <div class="header">
+      <img src="https://www.example.com/logo.png" alt="Logo">
     </div>
-    <a class="view-all" href="https://www.kimika.com.br/">Ver tudo</a>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <h1>Super Ofertas para Você!</h1>
+      <p>Confira nossos produtos com descontos imperdíveis por tempo limitado.</p>
+      <a href="https://www.seusite.com/ofertas" class="button">Ver Ofertas</a>
+    </div>
+
+    <!-- Produto 1 -->
+    <div class="product">
+      <img src="https://www.example.com/produto1.jpg" alt="Produto 1">
+      <div class="info">
+        <h2>Produto Exemplo 1</h2>
+        <p>Descrição curta do produto exemplo 1. Aproveite o desconto!</p>
+        <a href="https://www.seusite.com/produto1" class="button">Comprar Agora</a>
+      </div>
+    </div>
+
+    <!-- Produto 2 -->
+    <div class="product">
+      <img src="https://www.example.com/produto2.jpg" alt="Produto 2">
+      <div class="info">
+        <h2>Produto Exemplo 2</h2>
+        <p>Mais um item incrível com preço especial para você.</p>
+        <a href="https://www.seusite.com/produto2" class="button">Comprar Agora</a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      Você está recebendo este e-mail porque se cadastrou em nosso site.<br>
+      Caso não queira mais receber nossas mensagens, <a href="#" style="color: #F7C027;">clique aqui para sair</a>.
+    </div>
+
   </div>
 </body>
-
 </html>
