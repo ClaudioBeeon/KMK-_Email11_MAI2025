@@ -1,168 +1,174 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Kimika</title>
-    <style>
-        /* Estilos globais */
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #fff; /* Fundo branco para todo o email */
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 600; /* Semibold */
-            text-transform: uppercase;
-            color: #000;
-        }
+  <title>Email 11</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <style type="text/css">
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
 
-        table {
-            border-collapse: collapse;
-        }
+    a {
+      text-decoration: none;
+    }
 
-        /* Container principal */
-        .container {
-            width: 100%;
-            max-width: 600px;
-            margin: 0 auto;
-        }
+    .product-button {
+      background-color: #000000;
+      color: #ffffff;
+      padding: 12px 24px;
+      display: inline-block;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 14px;
+      border: none;
+    }
 
-        /* Grid de produtos */
-        .product-grid {
-            display: table;
-            width: 100%;
-        }
+    .product-button:hover {
+      background-color: #800020;
+    }
 
-        .product-row {
-            display: table-row;
-        }
+    .product-description {
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 14px;
+      margin: 10px 0;
+    }
 
-        .product-cell {
-            display: table-cell;
-            width: 50%;
-            padding: 20px;
-            text-align: center;
-        }
+    .footer-section {
+      background-color: #ffffff;
+      text-align: center;
+      padding: 30px 20px;
+    }
 
-        .product-image {
-            max-width: 100%;
-            height: auto;
-        }
+    .footer-text {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 16px;
+      margin-bottom: 20px;
+      line-height: 1.4;
+    }
 
-        .product-description {
-            margin-top: 10px;
-            font-size: 14px;
-            line-height: 1.2; /* Títulos em 2 linhas balanceadas */
-            height: 2.4em; /* Garante altura para 2 linhas */
-            overflow: hidden; /* Esconde o texto que ultrapassa as 2 linhas */
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-        }
+    .footer-button {
+      background-color: #000000;
+      color: #ffffff;
+      padding: 14px 28px;
+      font-size: 14px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+      border: none;
+      display: inline-block;
+    }
 
-        .product-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #000;
-            color: #fff;
-            text-decoration: none;
-            border: none;
-            cursor: pointer;
-            margin-top: 15px;
-        }
+    .footer-button:hover {
+      background-color: #800020;
+    }
 
-        .product-button:hover {
-            background-color: #800020; /* Efeito hover vinho */
-        }
+    @media only screen and (max-width: 620px) {
+      table, tr, td {
+        width: 100% !important;
+        display: block;
+      }
 
-        /* Seção final */
-        .final-section {
-            padding: 20px;
-            text-align: center;
-            background-color: #fff; /* Fundo branco para o texto final */
-        }
+      .product-button, .footer-button {
+        width: 100% !important;
+        box-sizing: border-box;
+      }
 
-        .final-text {
-            font-size: 16px;
-            margin-bottom: 10px;
-            line-height: 1.3; /* Ajuste para o "também" na segunda linha */
-        }
+      .footer-text {
+        font-size: 14px;
+      }
 
-        .final-button {
-             display: inline-block;
-            padding: 10px 20px;
-            background-color: #000;
-            color: #fff;
-            text-decoration: none;
-            border: none;
-            cursor: pointer;
-            margin-top: 15px;
-        }
+      .product-description {
+        font-size: 12px;
+      }
 
-        .final-button:hover {
-            background-color: #800020; /* Efeito hover vinho */
-        }
-
-        /* Estilos Mobile */
-        @media screen and (max-width: 600px) {
-            .product-cell {
-                width: 100%;
-                display: block; /* Produtos em linha única */
-                padding: 10px; /* Espaçamentos reduzidos */
-            }
-
-            .final-section {
-                padding: 10px; /* Espaçamentos reduzidos */
-            }
-
-            .final-text {
-                font-size: 14px; /* Reduzir texto em mobile */
-            }
-        }
-    </style>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+      img {
+        width: 100% !important;
+        height: auto !important;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <div class="container">
-        <table width="100%">
-            <tr>
-                <td>
-                    <img src="https://i.imgur.com/X1pBuYm.png" alt="Imagem do Topo" style="display: block; width: 100%;">
-                </td>
-            </tr>
-        </table>
+  <div align="center" style="background-color: #ffffff; padding: 0;">
+    <table width="600" cellpadding="0" cellspacing="0" border="0">
+      <!-- Imagem do topo -->
+      <tr>
+        <td colspan="2">
+          <img src="https://i.imgur.com/X1pBuYm.png" width="600" style="display: block;" border="0" alt="">
+        </td>
+      </tr>
 
-        <div class="product-grid">
-            <div class="product-row">
-                <div class="product-cell">
-                    <img src="https://i.imgur.com/4rD17DH.png" alt="Vestido Longo com Fenda Frontal Preto" class="product-image">
-                    <p class="product-description">Vestido Longo com Fenda Frontal Preto</p>
-                    <a href="https://www.kimika.com.br/vestido-longo-com-fenda-frontal-preto" class="product-button">Garanta o seu</a>
-                </div>
-                <div class="product-cell">
-                    <img src="https://i.imgur.com/LVWsqW6.png" alt="Conjunto de Saia Midi e Blusa" class="product-image">
-                    <p class="product-description">Conjunto de Saia Midi e Blusa</p>
-                     <a href="https://www.kimika.com.br/conjunto-de-saia-midi-e-blusa-gola-alta-moletinho" class="product-button">Garanta o seu</a>
-                </div>
-            </div>
-            <div class="product-row">
-                <div class="product-cell">
-                    <img src="https://i.imgur.com/qyOX3bt.png" alt="Vestido Midi Manga Longa Estampado" class="product-image">
-                     <p class="product-description">Vestido Midi Manga Longa Estampado</p>
-                     <a href="https://www.kimika.com.br/vestido-midi-manga-longa-estampado" class="product-button">Garanta o seu</a>
-                </div>
-                <div class="product-cell">
-                    <img src="https://i.imgur.com/LncOgS2.png" alt="Vestido Cruto de Mangas Bulfantes" class="product-image">
-                     <p class="product-description">Vestido Cruto de Mangas Bulfantes</p>
-                    <a href="https://www.kimika.com.br/vestido-cruto-de-mangas-bulfantes-com-amarracao-frontal-ferrugem" class="product-button">Garanta o seu</a>
-                </div>
-            </div>
-        </div>
+      <!-- Primeira linha de produtos -->
+      <tr>
+        <!-- Produto 1 -->
+        <td width="300">
+          <img src="https://i.imgur.com/4rD17DH.png" width="300" style="display: block;" border="0" alt="">
+          <div class="product-description">
+            VESTIDO LONGO COM<br> FENDA FRONTAL PRETO
+          </div>
+          <div style="text-align: center; margin-bottom: 40px;">
+            <a href="https://www.kimika.com.br/vestido-longo-com-fenda-frontal-preto" class="product-button">Garanta o seu</a>
+          </div>
+        </td>
 
-        <div class="final-section">
-            <p class="final-text">Não fique para trás, <br>garanta também nossos últimos lançamentos.</p>
-            <a href="https://www.kimika.com.br/" class="final-button">Ver tudo</a>
-        </div>
+        <!-- Produto 2 -->
+        <td width="300">
+          <img src="https://i.imgur.com/LVWsqW6.png" width="300" style="display: block;" border="0" alt="">
+          <div class="product-description">
+            CONJUNTO DE SAIA MIDI<br>E BLUSA
+          </div>
+          <div style="text-align: center; margin-bottom: 40px;">
+            <a href="https://www.kimika.com.br/conjunto-de-saia-midi-e-blusa-gola-alta-moletinho" class="product-button">Garanta o seu</a>
+          </div>
+        </td>
+      </tr>
+
+      <!-- Segunda linha de produtos -->
+      <tr>
+        <!-- Produto 3 -->
+        <td width="300">
+          <img src="https://i.imgur.com/qyOX3bt.png" width="300" style="display: block;" border="0" alt="">
+          <div class="product-description">
+            VESTIDO MIDI MANGA<br>LONGA ESTAMPADO
+          </div>
+          <div style="text-align: center;">
+            <a href="https://www.kimika.com.br/vestido-midi-manga-longa-estampado" class="product-button">Garanta o seu</a>
+          </div>
+        </td>
+
+        <!-- Produto 4 -->
+        <td width="300">
+          <img src="https://i.imgur.com/LncOgS2.png" width="300" style="display: block;" border="0" alt="">
+          <div class="product-description">
+            VESTIDO CRUTO DE MANGAS<br>BULFANTES
+          </div>
+          <div style="text-align: center;">
+            <a href="https://www.kimika.com.br/vestido-cruto-de-mangas-bulfantes-com-amarracao-frontal-ferrugem" class="product-button">Garanta o seu</a>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Seção final -->
+    <div class="footer-section">
+      <div class="footer-text">
+        NÃO FIQUE PARA TRÁS,<br>TAMBÉM GARANTA NOSSOS ÚLTIMOS LANÇAMENTOS.
+      </div>
+      <a href="https://www.kimika.com.br/" class="footer-button">Ver tudo</a>
     </div>
+  </div>
 </body>
 </html>
