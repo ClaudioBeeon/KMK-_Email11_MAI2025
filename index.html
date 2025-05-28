@@ -1,176 +1,168 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-<title>Email 11</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--[if !mso]><!-->
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
-<!--<![endif]-->
-<style type="text/css">
-    body, table, td {
-        font-family: 'Montserrat', Arial, sans-serif;
-        font-weight: 600 !important;
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-    body {
-        background-color: #ffffff !important;
-    }
-    .header-image {
-        display: block;
-        width: 100%;
-        max-width: 600px;
-        height: auto;
-        margin: 0 auto;
-    }
-    .product-title {
-        font-family: 'Montserrat', Arial, sans-serif !important;
-        font-weight: 600 !important;
-        text-transform: uppercase;
-        font-size: 14px;
-        color: #000000;
-        text-align: center;
-        padding: 8px 15px 5px !important; /* Reduzido o padding */
-        background-color: #ffffff;
-        line-height: 1.3;
-        margin: 0 !important;
-    }
-    .product-button {
-        font-family: 'Montserrat', Arial, sans-serif !important;
-        font-weight: 600 !important;
-        text-transform: uppercase;
-        font-size: 12px;
-        color: #ffffff !important;
-        text-align: center;
-        background-color: #000000 !important;
-        padding: 10px 0 !important;
-        margin: 0 auto 15px !important;
-        display: block;
-        width: 180px;
-        text-decoration: none;
-        border-radius: 0 !important;
-        border: none !important;
-    }
-    .final-section {
-        background-color: #ffffff;
-        padding: 15px 0 25px !important; /* Reduzido o padding */
-        text-align: center;
-    }
-    .final-text {
-        font-family: 'Montserrat', Arial, sans-serif !important;
-        font-weight: 600 !important;
-        text-transform: uppercase;
-        font-size: 14px;
-        color: #000000;
-        text-align: center;
-        padding: 0 15px !important;
-        margin: 0 0 10px 0 !important;
-        line-height: 1.4;
-    }
-    .final-button {
-        font-family: 'Montserrat', Arial, sans-serif !important;
-        font-weight: 600 !important;
-        text-transform: uppercase;
-        font-size: 12px;
-        color: #ffffff !important;
-        text-align: center;
-        background-color: #000000 !important;
-        padding: 10px 0 !important;
-        margin: 0 auto !important;
-        display: block !important;
-        width: 180px;
-        text-decoration: none;
-        border-radius: 0 !important;
-        border: none !important;
-    }
-    @media screen and (max-width: 480px) {
-        .product-title, .final-text {
-            font-size: 12px !important;
-            padding: 5px 10px 3px !important; /* Padding menor no mobile */
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Kimika</title>
+    <style>
+        /* Estilos globais */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* Fundo branco para todo o email */
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600; /* Semibold */
+            text-transform: uppercase;
+            color: #000;
         }
-        .product-button, .final-button {
-            width: 160px !important;
-            padding: 8px 0 !important;
-            margin-bottom: 10px !important;
+
+        table {
+            border-collapse: collapse;
         }
+
+        /* Container principal */
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Grid de produtos */
+        .product-grid {
+            display: table;
+            width: 100%;
+        }
+
+        .product-row {
+            display: table-row;
+        }
+
+        .product-cell {
+            display: table-cell;
+            width: 50%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product-description {
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 1.2; /* Títulos em 2 linhas balanceadas */
+            height: 2.4em; /* Garante altura para 2 linhas */
+            overflow: hidden; /* Esconde o texto que ultrapassa as 2 linhas */
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+
+        .product-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .product-button:hover {
+            background-color: #800020; /* Efeito hover vinho */
+        }
+
+        /* Seção final */
         .final-section {
-            padding: 10px 0 20px !important;
+            padding: 20px;
+            text-align: center;
+            background-color: #fff; /* Fundo branco para o texto final */
         }
-    }
-</style>
+
+        .final-text {
+            font-size: 16px;
+            margin-bottom: 10px;
+            line-height: 1.3; /* Ajuste para o "também" na segunda linha */
+        }
+
+        .final-button {
+             display: inline-block;
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .final-button:hover {
+            background-color: #800020; /* Efeito hover vinho */
+        }
+
+        /* Estilos Mobile */
+        @media screen and (max-width: 600px) {
+            .product-cell {
+                width: 100%;
+                display: block; /* Produtos em linha única */
+                padding: 10px; /* Espaçamentos reduzidos */
+            }
+
+            .final-section {
+                padding: 10px; /* Espaçamentos reduzidos */
+            }
+
+            .final-text {
+                font-size: 14px; /* Reduzir texto em mobile */
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 </head>
-<body style="margin: 0; padding: 0; background-color: #ffffff;">
-<!--[if mso]>
-<style type="text/css">
-body, table, td {font-family: Arial, sans-serif !important;}
-</style>
-<![endif]-->
-<div style="background-color: #ffffff; width: 100%; padding-top: 5px !important;"> <!-- Reduzido o padding-top -->
-    <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="background-color: #ffffff;">
-        <!-- Cabeçalho -->
-        <tr>
-            <td align="center" style="padding: 0;">
-                <img src="https://i.imgur.com/X1pBuYm.png" class="header-image" border="0" alt="">
-            </td>
-        </tr>
-        
-        <!-- Primeira linha de produtos -->
-        <tr>
-            <td>
-                <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tr>
-                        <td width="50%" align="center" valign="top" style="padding-bottom: 10px;">
-                            <img src="https://i.imgur.com/4rD17DH.png" width="300" style="display: block; width: 100%; max-width: 300px; height: auto;" border="0" alt="">
-                            <p class="product-title">VESTIDO LONGO<br>COM FENDA FRONTAL PRETO</p>
-                            <div style="background-color: #ffffff; text-align: center;">
-                                <a href="https://www.kimika.com.br/vestido-longo-com-fenda-frontal-preto" class="product-button">GARANTA O SEU</a>
-                            </div>
-                        </td>
-                        <td width="50%" align="center" valign="top" style="padding-bottom: 10px;">
-                            <img src="https://i.imgur.com/LVWsqW6.png" width="300" style="display: block; width: 100%; max-width: 300px; height: auto;" border="0" alt="">
-                            <p class="product-title">CONJUNTO DE SAIA<br>MIDI E BLUSA</p>
-                            <div style="background-color: #ffffff; text-align: center;">
-                                <a href="https://www.kimika.com.br/conjunto-de-saia-midi-e-blusa-gola-alta-moletinho" class="product-button">GARANTA O SEU</a>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        
-        <!-- Segunda linha de produtos -->
-        <tr>
-            <td>
-                <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tr>
-                        <td width="50%" align="center" valign="top" style="padding-bottom: 10px;">
-                            <img src="https://i.imgur.com/qyOX3bt.png" width="300" style="display: block; width: 100%; max-width: 300px; height: auto;" border="0" alt="">
-                            <p class="product-title">VESTIDO MIDI<br>MANGA LONGA ESTAMPADO</p>
-                            <div style="background-color: #ffffff; text-align: center;">
-                                <a href="https://www.kimika.com.br/vestido-midi-manga-longa-estampado" class="product-button">GARANTA O SEU</a>
-                            </div>
-                        </td>
-                        <td width="50%" align="center" valign="top" style="padding-bottom: 10px;">
-                            <img src="https://i.imgur.com/LncOgS2.png" width="300" style="display: block; width: 100%; max-width: 300px; height: auto;" border="0" alt="">
-                            <p class="product-title">VESTIDO CRUTO<br>DE MANGAS BULFANTES</p>
-                            <div style="background-color: #ffffff; text-align: center;">
-                                <a href="https://www.kimika.com.br/vestido-cruto-de-mangas-bulfantes-com-amarracao-frontal-ferrugem" class="product-button">GARANTA O SEU</a>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        
-        <!-- Rodapé -->
-        <tr>
-            <td class="final-section">
-                <p class="final-text">NÃO FIQUE PARA TRÁS,<br>GARANTA TAMBÉM NOSSOS ÚLTIMOS LANÇAMENTOS.</p>
-                <a href="https://www.kimika.com.br/" class="final-button">VER TUDO</a>
-            </td>
-        </tr>
-    </table>
-</div>
+<body>
+    <div class="container">
+        <table width="100%">
+            <tr>
+                <td>
+                    <img src="https://i.imgur.com/X1pBuYm.png" alt="Imagem do Topo" style="display: block; width: 100%;">
+                </td>
+            </tr>
+        </table>
+
+        <div class="product-grid">
+            <div class="product-row">
+                <div class="product-cell">
+                    <img src="https://i.imgur.com/4rD17DH.png" alt="Vestido Longo com Fenda Frontal Preto" class="product-image">
+                    <p class="product-description">Vestido Longo com Fenda Frontal Preto</p>
+                    <a href="https://www.kimika.com.br/vestido-longo-com-fenda-frontal-preto" class="product-button">Garanta o seu</a>
+                </div>
+                <div class="product-cell">
+                    <img src="https://i.imgur.com/LVWsqW6.png" alt="Conjunto de Saia Midi e Blusa" class="product-image">
+                    <p class="product-description">Conjunto de Saia Midi e Blusa</p>
+                     <a href="https://www.kimika.com.br/conjunto-de-saia-midi-e-blusa-gola-alta-moletinho" class="product-button">Garanta o seu</a>
+                </div>
+            </div>
+            <div class="product-row">
+                <div class="product-cell">
+                    <img src="https://i.imgur.com/qyOX3bt.png" alt="Vestido Midi Manga Longa Estampado" class="product-image">
+                     <p class="product-description">Vestido Midi Manga Longa Estampado</p>
+                     <a href="https://www.kimika.com.br/vestido-midi-manga-longa-estampado" class="product-button">Garanta o seu</a>
+                </div>
+                <div class="product-cell">
+                    <img src="https://i.imgur.com/LncOgS2.png" alt="Vestido Cruto de Mangas Bulfantes" class="product-image">
+                     <p class="product-description">Vestido Cruto de Mangas Bulfantes</p>
+                    <a href="https://www.kimika.com.br/vestido-cruto-de-mangas-bulfantes-com-amarracao-frontal-ferrugem" class="product-button">Garanta o seu</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="final-section">
+            <p class="final-text">Não fique para trás, <br>garanta também nossos últimos lançamentos.</p>
+            <a href="https://www.kimika.com.br/" class="final-button">Ver tudo</a>
+        </div>
+    </div>
 </body>
 </html>
