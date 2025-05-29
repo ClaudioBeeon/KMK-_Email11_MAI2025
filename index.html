@@ -10,8 +10,8 @@
     font-weight: 600;
     font-size: 14px;
     color: #FFFFFF !important;
-    background-color: #000000;
-    text-decoration: none;
+    background-color: #000000 !important;
+    text-decoration: none !important;
     padding: 12px 25px;
     display: inline-block;
     border-radius: 0 !important;
@@ -19,17 +19,18 @@
     -moz-border-radius: 0 !important;
     text-align: center;
     border: none;
-    cursor: pointer;
+    -webkit-text-size-adjust: none;
+    mso-hide: all;
   }
-  .image-container {
+  .image-wrapper {
     position: relative;
-    display: inline-block;
+    display: block;
   }
   .button-overlay {
     position: absolute;
     bottom: 20px;
     left: 0;
-    right: 0;
+    width: 100%;
     text-align: center;
   }
   .final-text {
@@ -41,51 +42,103 @@
     padding: 20px 40px;
     line-height: 1.4;
   }
-  .final-button-container {
-    text-align: center;
-    padding-bottom: 30px;
+  /* Fix para clients que não suportam position:absolute */
+  .fallback-button {
+    display: none;
+    font-size: 0;
+    max-height: 0;
+    overflow: hidden;
+  }
+  /* Estilo para garantir compatibilidade com Gmail */
+  u + #body a {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+  }
+  @media screen and (max-width: 480px) {
+    .button-overlay {
+      position: relative;
+      bottom: auto;
+      margin-top: -40px;
+      margin-bottom: 20px;
+    }
   }
 </style>
 </head>
-<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" id="body">
+<!--[if !mso]><!-- -->
+<div style="display:none;overflow:hidden;line-height:0;max-height:0;">
+  <!-- Fallback para clients que não suportam position:absolute -->
+  <div class="fallback-button">
+    <a href="https://www.kimika.com.br/vestido-longo-com-fenda-frontal-preto" style="color:#000000;text-decoration:none;">GARANTA O SEU</a>
+  </div>
+</div>
+<!--<![endif]-->
 <div id="centro" align="center">
 <table id="Table_01" width="600" border="0" cellpadding="0" cellspacing="0">
 	<tr>
 		<td colspan="2">
-			<img src="https://i.imgur.com/uMAi4qB.png" width="600" style="display: block" height="763" border="0" alt="">
+			<img src="https://i.imgur.com/uMAi4qB.png" width="600" style="display: block; width: 100%; max-width: 600px;" height="763" border="0" alt="">
 		</td>
 	</tr>
 	<tr>
-		<td width="302">
-			<div class="image-container">
-				<img src="https://i.imgur.com/bRqL5BT.png" width="302" style="display: block" height="520" border="0" alt="">
+		<td width="300" style="width: 300px; padding: 0;">
+			<div class="image-wrapper">
+				<img src="https://i.imgur.com/bRqL5BT.png" width="300" style="display: block; width: 100%;" height="520" border="0" alt="">
 				<div class="button-overlay">
+					<!--[if mso]>
+					  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.kimika.com.br/vestido-longo-com-fenda-frontal-preto" style="height:40px;v-text-anchor:middle;width:150px;" arcsize="0%" strokecolor="#000000" fillcolor="#000000">
+					    <w:anchorlock/>
+					    <center style="color:#ffffff;font-family:'Montserrat',sans-serif;font-weight:600;font-size:14px;">GARANTA O SEU</center>
+					  </v:roundrect>
+					<![endif]-->
 					<a href="https://www.kimika.com.br/vestido-longo-com-fenda-frontal-preto" class="button" target="_blank">GARANTA O SEU</a>
 				</div>
 			</div>
 		</td>
-		<td width="298">
-			<div class="image-container">
-				<img src="https://i.imgur.com/6QWw00B.png" width="298" style="display: block" height="520" border="0" alt="">
+		<td width="300" style="width: 300px; padding: 0;">
+			<div class="image-wrapper">
+				<img src="https://i.imgur.com/6QWw00B.png" width="300" style="display: block; width: 100%;" height="520" border="0" alt="">
 				<div class="button-overlay">
+					<!--[if mso]>
+					  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.kimika.com.br/conjunto-de-saia-midi-e-blusa-gola-alta-moletinho" style="height:40px;v-text-anchor:middle;width:150px;" arcsize="0%" strokecolor="#000000" fillcolor="#000000">
+					    <w:anchorlock/>
+					    <center style="color:#ffffff;font-family:'Montserrat',sans-serif;font-weight:600;font-size:14px;">GARANTA O SEU</center>
+					  </v:roundrect>
+					<![endif]-->
 					<a href="https://www.kimika.com.br/conjunto-de-saia-midi-e-blusa-gola-alta-moletinho" class="button" target="_blank">GARANTA O SEU</a>
 				</div>
 			</div>
 		</td>
 	</tr>
 	<tr>
-		<td width="302">
-			<div class="image-container">
-				<img src="https://i.imgur.com/TY31c09.png" width="302" style="display: block" height="516" border="0" alt="">
+		<td width="300" style="width: 300px; padding: 0;">
+			<div class="image-wrapper">
+				<img src="https://i.imgur.com/TY31c09.png" width="300" style="display: block; width: 100%;" height="516" border="0" alt="">
 				<div class="button-overlay">
+					<!--[if mso]>
+					  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.kimika.com.br/vestido-midi-manga-longa-estampado" style="height:40px;v-text-anchor:middle;width:150px;" arcsize="0%" strokecolor="#000000" fillcolor="#000000">
+					    <w:anchorlock/>
+					    <center style="color:#ffffff;font-family:'Montserrat',sans-serif;font-weight:600;font-size:14px;">GARANTA O SEU</center>
+					  </v:roundrect>
+					<![endif]-->
 					<a href="https://www.kimika.com.br/vestido-midi-manga-longa-estampado" class="button" target="_blank">GARANTA O SEU</a>
 				</div>
 			</div>
 		</td>
-		<td width="298">
-			<div class="image-container">
-				<img src="https://i.imgur.com/Z0rANXM.png" width="298" style="display: block" height="516" border="0" alt="">
+		<td width="300" style="width: 300px; padding: 0;">
+			<div class="image-wrapper">
+				<img src="https://i.imgur.com/Z0rANXM.png" width="300" style="display: block; width: 100%;" height="516" border="0" alt="">
 				<div class="button-overlay">
+					<!--[if mso]>
+					  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.kimika.com.br/vestido-cruto-de-mangas-bulfantes-com-amarracao-frontal-ferrugem" style="height:40px;v-text-anchor:middle;width:150px;" arcsize="0%" strokecolor="#000000" fillcolor="#000000">
+					    <w:anchorlock/>
+					    <center style="color:#ffffff;font-family:'Montserrat',sans-serif;font-weight:600;font-size:14px;">GARANTA O SEU</center>
+					  </v:roundrect>
+					<![endif]-->
 					<a href="https://www.kimika.com.br/vestido-cruto-de-mangas-bulfantes-com-amarracao-frontal-ferrugem" class="button" target="_blank">GARANTA O SEU</a>
 				</div>
 			</div>
@@ -97,7 +150,13 @@
 		</td>
 	</tr>
 	<tr>
-		<td colspan="2" class="final-button-container">
+		<td colspan="2" style="text-align: center; padding-bottom: 30px;">
+			<!--[if mso]>
+			  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.kimika.com.br/lancamento" style="height:40px;v-text-anchor:middle;width:150px;" arcsize="0%" strokecolor="#000000" fillcolor="#000000">
+			    <w:anchorlock/>
+			    <center style="color:#ffffff;font-family:'Montserrat',sans-serif;font-weight:600;font-size:14px;">VER MAIS</center>
+			  </v:roundrect>
+			<![endif]-->
 			<a href="https://www.kimika.com.br/lancamento" class="button" target="_blank">VER MAIS</a>
 		</td>
 	</tr>
