@@ -1,156 +1,80 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Email Corrigido</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style type="text/css">
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
-
-  body, a, p, td {
-    font-family: 'Montserrat', sans-serif !important;
-  }
-
-  a, a:visited, a:hover, a:active {
-    color: #FFFFFF !important;
-    text-decoration: none !important;
-  }
-
-  .button {
-    font-family: 'Montserrat', sans-serif !important;
-    font-weight: 600 !important;
-    font-size: 14px !important;
-    color: #FFFFFF !important;
-    background-color: #000000 !important;
-    text-decoration: none !important;
-    padding: 12px 25px !important;
-    display: inline-block !important;
-    border-radius: 0 !important;
-    text-align: center !important;
-    border: none !important;
-  }
-
-  .image-wrapper {
-    position: relative !important;
-    display: block !important;
-  }
-
-  .button-overlay {
-    position: absolute !important;
-    bottom: 20px !important;
-    left: 0 !important;
-    width: 100% !important;
-    text-align: center !important;
-  }
-
-  .final-text {
-    font-family: 'Montserrat', sans-serif !important;
-    font-weight: 600 !important;
-    font-size: 16px !important;
-    color: #000000 !important;
-    text-align: center !important;
-    padding: 20px 40px !important;
-    line-height: 1.4 !important;
-  }
-
-  .fallback-button {
-    display: none;
-    font-size: 0;
-    max-height: 0;
-    overflow: hidden;
-  }
-
-  u + #body a {
-    color: inherit !important;
-    text-decoration: none !important;
-  }
-
-  @media screen and (max-width: 600px) {
-    .image-wrapper {
-      position: relative !important;
+  <title>Email 11</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #FFFFFF;
     }
-    .button-overlay {
-      position: absolute !important;
-      bottom: 20px !important;
-      left: 0 !important;
-      width: 100% !important;
-      text-align: center !important;
+    table {
+      border-spacing: 0;
+      border-collapse: collapse;
     }
-  }
-</style>
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border: 0;
+    }
+    @media screen and (max-width: 600px) {
+      .container {
+        width: 100% !important;
+      }
+      .two-column {
+        width: 100% !important;
+        display: block !important;
+      }
+      .two-column img {
+        width: 100% !important;
+        height: auto !important;
+      }
+    }
+  </style>
 </head>
-<body bgcolor="#FFFFFF" id="body" style="margin:0;padding:0;">
-<div align="center">
-<table width="600" border="0" cellpadding="0" cellspacing="0" style="width:100%;max-width:600px;">
-  <tr>
-    <td colspan="2">
-      <img src="https://i.imgur.com/uMAi4qB.png" width="600" style="display: block; width: 100%; max-width: 600px;" height="763" border="0" alt="">
-    </td>
-  </tr>
-
-  <!-- BLOCO DE IMAGEM E BOTÃO -->
-  <!-- Repita esse bloco para os 4 produtos -->
-  <tr>
-    <td width="300" style="padding: 0;">
-      <div class="image-wrapper">
-        <img src="https://i.imgur.com/bRqL5BT.png" width="300" style="display: block; width: 100%;" height="520" border="0" alt="">
-        <div class="button-overlay">
-          <a href="https://www.kimika.com.br/vestido-longo-com-fenda-frontal-preto" class="button" target="_blank">
-            GARANTA O SEU
+<body>
+  <div align="center">
+    <table class="container" width="600" border="0" cellpadding="0" cellspacing="0" style="width: 100%; max-width: 600px;">
+      <tr>
+        <td colspan="2">
+          <img src="https://i.imgur.com/kveIqeT.png" alt="">
+        </td>
+      </tr>
+      <tr>
+        <td class="two-column" width="302">
+          <a href="https://www.kimika.com.br/vestido-longo-com-fenda-frontal-preto">
+            <img src="https://i.imgur.com/OkhNWx0.png" alt="">
           </a>
-        </div>
-      </div>
-    </td>
-    <td width="300" style="padding: 0;">
-      <div class="image-wrapper">
-        <img src="https://i.imgur.com/6QWw00B.png" width="300" style="display: block; width: 100%;" height="520" border="0" alt="">
-        <div class="button-overlay">
-          <a href="https://www.kimika.com.br/conjunto-de-saia-midi-e-blusa-gola-alta-moletinho" class="button" target="_blank">
-            GARANTA O SEU
+        </td>
+        <td class="two-column" width="298">
+          <a href="https://www.kimika.com.br/conjunto-de-saia-midi-e-blusa-gola-alta-moletinho">
+            <img src="https://i.imgur.com/bAqvIxr.png" alt="">
           </a>
-        </div>
-      </div>
-    </td>
-  </tr>
-
-  <tr>
-    <td width="300" style="padding: 0;">
-      <div class="image-wrapper">
-        <img src="https://i.imgur.com/TY31c09.png" width="300" style="display: block; width: 100%;" height="516" border="0" alt="">
-        <div class="button-overlay">
-          <a href="https://www.kimika.com.br/vestido-midi-manga-longa-estampado" class="button" target="_blank">
-            GARANTA O SEU
+        </td>
+      </tr>
+      <tr>
+        <td class="two-column" width="302">
+          <a href="https://www.kimika.com.br/vestido-midi-manga-longa-estampado">
+            <img src="https://i.imgur.com/Yf4RoXH.png" alt="">
           </a>
-        </div>
-      </div>
-    </td>
-    <td width="300" style="padding: 0;">
-      <div class="image-wrapper">
-        <img src="https://i.imgur.com/Z0rANXM.png" width="300" style="display: block; width: 100%;" height="516" border="0" alt="">
-        <div class="button-overlay">
-          <a href="https://www.kimika.com.br/vestido-cruto-de-mangas-bulfantes-com-amarracao-frontal-ferrugem" class="button" target="_blank">
-            GARANTA O SEU
+        </td>
+        <td class="two-column" width="298">
+          <a href="https://www.kimika.com.br/vestido-cruto-de-mangas-bulfantes-com-amarracao-frontal-ferrugem">
+            <img src="https://i.imgur.com/XIxW4Di.png" alt="">
           </a>
-        </div>
-      </div>
-    </td>
-  </tr>
-
-  <!-- TEXTO FINAL -->
-  <tr>
-    <td colspan="2" class="final-text">
-      Não fique para trás, garanta<br>também nossos últimos lançamentos.
-    </td>
-  </tr>
-
-  <!-- BOTÃO FINAL -->
-  <tr>
-    <td colspan="2" style="text-align: center; padding-bottom: 30px;">
-      <a href="https://www.kimika.com.br/lancamento" class="button" target="_blank">
-        VER MAIS
-      </a>
-    </td>
-  </tr>
-</table>
-</div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <a href="https://www.kimika.com.br/lancamento">
+            <img src="https://i.imgur.com/LYTZ6R6.png" alt="">
+          </a>
+        </td>
+      </tr>
+    </table>
+  </div>
 </body>
 </html>
